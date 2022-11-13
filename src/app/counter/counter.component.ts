@@ -15,10 +15,13 @@ export class CounterComponent implements OnInit {
 
   public Increment(){
     this._counter++;
+    localStorage.setItem("counter", this._counter.toString());
     console.log(this._counter);
   }
 
-  constructor() { }
+  constructor() { 
+    this._counter = localStorage.getItem("counter") === "" ? 0 : Number(localStorage.getItem("counter"));
+  }
 
   ngOnInit(): void {
   }

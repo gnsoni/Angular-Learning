@@ -18,6 +18,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
 import { ModuleComponent } from './module/module.component';
 import { CounterComponent } from './counter/counter.component';
+import { tcpclientComponent } from './tcpclient/tcpclient.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,8 @@ import { CounterComponent } from './counter/counter.component';
     AboutComponent,
     DashboardComponent,
     ModuleComponent,
-    CounterComponent
+    CounterComponent,
+    tcpclientComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,9 @@ import { CounterComponent } from './counter/counter.component';
     MatListModule,
     MatGridListModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

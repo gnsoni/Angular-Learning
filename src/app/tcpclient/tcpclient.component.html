@@ -1,0 +1,19 @@
+<div class="grid-container">
+    <h1 class="mat-h1">Http client</h1>
+    <mat-grid-list cols="2" rowHeight="350px">
+
+        <p>Find Github user: </p><input type="text" [(ngModel)]="name">
+        
+        <button (click)="FindGitUser()">Find</button>
+
+        <hr>
+
+        <p>User Name: {{name}}</p>
+
+        <img class="img" src="{{AvatarUrl}}" />
+
+    </mat-grid-list>
+  </div>
+  
+
+

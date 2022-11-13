@@ -1,8 +1,12 @@
-<p>counter works!</p>
+<div class="grid-container">
+    <h1 class="mat-h1">Counter</h1>
+    <mat-grid-list cols="2" rowHeight="350px">
+        <p>counter works!</p>
 
-<hr>
-
-<button mat-button (click)="Increment()">Increment</button>
-
-<p>Current counter is : {{ GetCounter }}</p>
-
+        <hr>
+        
+        <button mat-button (click)="Increment()">Increment</button>
+        
+        <p>Current counter is : {{ GetCounter }}</p>
+    </mat-grid-list>
+  </div>
